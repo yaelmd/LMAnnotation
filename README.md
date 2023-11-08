@@ -1,2 +1,25 @@
 # LMAnnotation
-Data and code for the annotation of datasets using language models
+Code used to automate the annotation of datasets and data obtained to integrate into the [AICollaboratory](https://ai-collaboratory.jrc.ec.europa.eu/).
+
+## What is AICollaboratory? 💡
+[AICollaboratory](https://ai-collaboratory.jrc.ec.europa.eu/) is a tool to analyse, evaluate, compare and monitor the state-of-the art of Artificial Intelligence systems. This project provides an unifying setting that incorporates data, knowledge and measurements to characterise AI systems. The AIcollaboratory is framed in the context of AI watch, a knowledge service of the European Commission carried out by the JRC in collaboration with DG CNECT. 
+
+## Data :page_facing_up:
+[Data](https://upvedues-my.sharepoint.com/:f:/g/personal/ymordav_upv_edu_es/Ek3OQMpn9c1LpIqdhXO9STkBVEs2czgqo5MuMelIV1LLUA?e=niwklJ) (OneDrive link) contains a folder for each multiple choice task used in the study, obtained from [BigBench](https://github.com/google/BIG-bench) or [HELM](https://crfm.stanford.edu/helm/latest/). Inside each folder, there are 14 files:
+
+- {task}.csv: original task data.
+- {task}_aggreagated_metafeaures.csv: values for the linguistic meta-features for each instance in the task.
+- {task}_features_post.csv: meta-feature values for each task sentence after the post-processing stage.
+- {task}_rf_noIRT_difficulty_notargers.pdf: scatter plot representing predicted difficulty values by a Random Forest trained with linguistic meta-features vs actual values.
+- {task}_rf_readability_difficulty_notargers.pdf: scatter plot representing predicted difficulty values by a Random Forest trained with readability metrics vs actual values.
+- gpt-4_{task}: raw answers for meta-feature values for each sentence in the task by GPT-4.
+- LexicalDiversity_METRICS.csv: lexical diversity values for each task instance.
+- LexicalDiversity_PAIRS.csv: correlation matrix of lexical diversity metrics.
+- LexicalReadability_METRICS.csv: readability metrics values for each task instance.
+- LexicalReadability_PAIRS.csv: correlation matrix of readability metrics.
+- meta_features_{task}.pdf: bar plot showing the value distribution of each meta-feature for the task.
+- rf_noIRT_difficulty_feature_importance.csv: influence of each meta-feature in the prediction of the Random Forest. 
+- rf_readability_difficulty_feature_importance.csv: influence of each lexical diversity and readability metric in the prediction of the Random Forest.
+
+## How to use the code 💻
+
