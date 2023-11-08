@@ -22,4 +22,11 @@ Code used to automate the annotation of datasets and data obtained to integrate 
 - rf_readability_difficulty_feature_importance.csv: influence of each lexical diversity and readability metric in the prediction of the Random Forest.
 
 ## How to use the code 💻
+For annotating any task use the original task data (with the structure followed in {task}.csv mentioned above). The code should be run in the following order:
+1. Preproceso
+2. GPT4Experiment (an API key with GPT4 access is needed)
+3. Postprocessing
 
+For evaluating the predictability of the results use:
+- AutomatedRF: for linguistic meta-features annotation.
+- AutomatedReadability: for lexical diversity and readability metrics calculation.
