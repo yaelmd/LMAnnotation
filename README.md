@@ -14,9 +14,9 @@ Code used to automate the annotation of datasets and data obtained to integrate 
 - {task}_rf_readability_difficulty_notargers.pdf: scatter plot representing predicted difficulty values by a Random Forest trained with readability metrics vs actual values.
 - gpt-4_{task}: raw answers for meta-feature values for each sentence in the task by GPT-4.
 - LexicalDiversity_METRICS.csv: lexical diversity values for each task instance.
-- LexicalDiversity_PAIRS.csv: correlation matrix of lexical diversity metrics.
+- LexicalDiversity_PAIRS.pdf: correlation matrix of lexical diversity metrics.
 - LexicalReadability_METRICS.csv: readability metrics values for each task instance.
-- LexicalReadability_PAIRS.csv: correlation matrix of readability metrics.
+- LexicalReadability_PAIRS.pdf: correlation matrix of readability metrics.
 - meta_features_{task}.pdf: bar plot showing the value distribution of each meta-feature for the task.
 - rf_noIRT_difficulty_feature_importance.csv: influence of each meta-feature in the prediction of the Random Forest. 
 - rf_readability_difficulty_feature_importance.csv: influence of each lexical diversity and readability metric in the prediction of the Random Forest.
