@@ -8,7 +8,7 @@ Code used to automate the annotation of datasets and data obtained to integrate 
 [Data](https://upvedues-my.sharepoint.com/:f:/g/personal/ymordav_upv_edu_es/ErCCxwQphKFIiRPfIHR1kIUB7Q3UEeplop76e5o24frEkg?e=7HFkup) (OneDrive link) contains a folder for each multiple choice task used in the study, obtained from [BigBench](https://github.com/google/BIG-bench) or [HELM](https://crfm.stanford.edu/helm/latest/). Inside each folder, there are 14 files:
 
 - {task}.csv: original task data.
-- {task}_aggreagated_metafeaures.csv: values for the linguistic meta-features for each instance in the task.
+- {task}_aggreagated_metafeatures.csv: values for the linguistic meta-features for each instance in the task.
 - {task}_features_post.csv: meta-feature values for each task sentence after the post-processing stage.
 - {task}_rf_noIRT_difficulty_notargers.pdf: scatter plot representing predicted difficulty values by a Random Forest trained with linguistic meta-features vs actual values.
 - {task}_rf_readability_difficulty_notargers.pdf: scatter plot representing predicted difficulty values by a Random Forest trained with readability metrics vs actual values.
